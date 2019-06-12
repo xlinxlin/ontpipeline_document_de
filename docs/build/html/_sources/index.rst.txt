@@ -7,14 +7,15 @@ Welcome to ontpipeline_document_de's documentation!
 ===================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   GetStarted.rst
+   InputFileStructure.rst
+   OutputFileStructure.rst
+   GeneralSettings.rst
+   BasecallingSettings.rst
+   DemultiplexingSettings.rst
+   ReadsFilterSettings.rst
+   AssemblySettings.rst
+   PolishingSettings.rst
+   QandA.rst

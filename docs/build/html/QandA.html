@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Suche &mdash; ontpipeline_document_de  Dokumentation</title>
+  <title>FAQ &mdash; ontpipeline_document_de  Dokumentation</title>
   
 
   
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
-    <link rel="search" title="Suche" href="#" /> 
+    <link rel="search" title="Suche" href="search.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +59,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -76,19 +76,14 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="InputFileStructure.html">Input File Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Output File Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">General Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PolishingSettings.html">Polishing Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="QandA.html">FAQ</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FAQ</a><ul>
+<li><a class="reference internal" href="#what-bioinformatics-tools-are-used">What bioinformatics tools are used?</a></li>
 </ul>
-
+</li>
+</ul>
+</div>
             
           
         </div>
@@ -132,12 +127,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Suche</li>
+      <li>FAQ</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/QandA.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -149,19 +146,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="what-bioinformatics-tools-are-used">
+<h2>What bioinformatics tools are used?<a class="headerlink" href="#what-bioinformatics-tools-are-used" title="Link zu dieser Überschrift">¶</a></h2>
+<ul class="simple">
+<li>Guppy  <a class="reference external" href="https://community.nanoporetech.com">https://community.nanoporetech.com</a></li>
+<li>Porechop  <a class="reference external" href="https://github.com/rrwick/Porechop">https://github.com/rrwick/Porechop</a></li>
+<li>NanoStat  <a class="reference external" href="https://github.com/wdecoster/nanostat">https://github.com/wdecoster/nanostat</a></li>
+<li>NanoFilt  <a class="reference external" href="https://github.com/wdecoster/nanofilt">https://github.com/wdecoster/nanofilt</a></li>
+<li>Unicycler  <a class="reference external" href="https://github.com/rrwick/Unicycler">https://github.com/rrwick/Unicycler</a></li>
+<li>BUSCO  <a class="reference external" href="https://busco.ezlab.org">https://busco.ezlab.org</a></li>
+<li>Seqtk <a class="reference external" href="https://github.com/lh3/seqtk">https://github.com/lh3/seqtk</a></li>
+</ul>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
@@ -200,7 +200,6 @@
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/translations.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
 
   
@@ -211,14 +210,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>

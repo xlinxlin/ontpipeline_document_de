@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Suche &mdash; ontpipeline_document_de  Dokumentation</title>
+  <title>Polishing Settings &mdash; ontpipeline_document_de  Dokumentation</title>
   
 
   
@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
-    <link rel="search" title="Suche" href="#" /> 
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="FAQ" href="QandA.html" />
+    <link rel="prev" title="Assembly Settings" href="AssemblySettings.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +61,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -76,7 +78,7 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="InputFileStructure.html">Input File Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Output File Structure</a></li>
@@ -84,8 +86,12 @@
 <li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PolishingSettings.html">Polishing Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Polishing Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#polishing-times-required">Polishing times (Required)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#busco-settings-optional">BUSCO settings (Optional)</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="QandA.html">FAQ</a></li>
 </ul>
 
@@ -132,12 +138,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Suche</li>
+      <li>Polishing Settings</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/PolishingSettings.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -149,24 +157,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="polishing-settings">
+<h1>Polishing Settings<a class="headerlink" href="#polishing-settings" title="Link zu dieser Überschrift">¶</a></h1>
+<img alt="img/PolishingSettings.png" src="img/PolishingSettings.png" />
+<img alt="img/AdvancedPolishingSettings.png" src="img/AdvancedPolishingSettings.png" />
+<div class="section" id="polishing-times-required">
+<h2>Polishing times (Required)<a class="headerlink" href="#polishing-times-required" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Set polishing times.</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<ul class="last simple">
+<li>Default: 1.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="busco-settings-optional">
+<h2>BUSCO settings (Optional)<a class="headerlink" href="#busco-settings-optional" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Set BUSCO options.</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<ul class="last simple">
+<li>Select „I want to use BUSCO for the assessement of genome assembly“ if you want to use BUSCO. Default: not selected.</li>
+<li>Select a lineage dataset. Default: Bacteria.</li>
+</ul>
+</div>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="QandA.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="AssemblySettings.html" class="btn btn-neutral" title="Assembly Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -200,7 +231,6 @@
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/translations.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
 
   
@@ -211,14 +241,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>
