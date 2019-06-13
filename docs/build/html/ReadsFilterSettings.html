@@ -79,7 +79,7 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="InputFileStructure.html">Die Struktur der Eingabedaten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Die Struktur der Ausgabedaten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">Allgemein Einstelllung</a></li>
@@ -87,9 +87,9 @@
 <li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Einstellung</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Reads Filter Einstellung</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#porechop-einstellung-1-optional">Porechop Einstellung  (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#read-score-2-required">Read Score  (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#read-length-2-required">Read Length [2] (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#head-crop-2-required">Head Crop  (Required)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#read-score-read-score-2-erfordlich">Read Score(Read Score)  (Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#readlange-read-length-2-erfordlich">Readlänge(Read Length) [2] (Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kopf-trimmen-head-crop-2-erfordlich">Kopf trimmen(Head Crop)  (Erfordlich)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
@@ -169,41 +169,38 @@
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Select „I want to trim adapter“ if you want to use Porechop to trim adapters. Defaut: selected.</li>
-<li>Select „I want to skip splitting reads based on middle adapters“ if you do not want to splt reads when an adapter is found in the middle. Default: not selected.</li>
+<li>„I want to trim adapter“ auszuwählen, wenn Sie Porechop verwenden möchten, um die Adapter der Sequenzen zu trimmen. Standardwert: ausgewählt.</li>
+<li>„I want to skip splitting reads based on middle adapters“ auszuwählen, wenn Sie keine Sequenz, die sich in der Mitte einen Adapter befindet, teilen möchten. Standardwert: nicht ausgewählt.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="read-score-2-required">
-<h2>Read Score <a class="footnote-reference" href="#id5" id="id2">[2]</a> (Required)<a class="headerlink" href="#read-score-2-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set a minimum average read quality score to filter the reads.</p>
+<div class="section" id="read-score-read-score-2-erfordlich">
+<h2>Read Score(Read Score) <a class="footnote-reference" href="#id5" id="id2">[2]</a> (Erfordlich)<a class="headerlink" href="#read-score-read-score-2-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Einer durchschnittlichen Mindestwert für die Readqualität einzugeben, um die Reads zu filtern.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Default: 9.</li>
-<li>If you want to keep all the reads, set the value to 0 .</li>
+<li>Standardwert: 9.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="read-length-2-required">
-<h2>Read Length [2] (Required)<a class="headerlink" href="#read-length-2-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set a minimum read length to filter reads.</p>
+<div class="section" id="readlange-read-length-2-erfordlich">
+<h2>Readlänge(Read Length) [2] (Erfordlich)<a class="headerlink" href="#readlange-read-length-2-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Eine minimale Readlänge einzugeben, um  die Reads zu filtern.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Default: 500.</li>
-<li>If you want to keep all the reads, set the value to 0, or only a postive integer is acceptable.</li>
+<li>Standardwert: 500.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="head-crop-2-required">
-<h2>Head Crop <a class="footnote-reference" href="#id5" id="id3">[2]</a> (Required)<a class="headerlink" href="#head-crop-2-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set n nucleotides to be trimmed from start of read.</p>
+<div class="section" id="kopf-trimmen-head-crop-2-erfordlich">
+<h2>Kopf trimmen(Head Crop) <a class="footnote-reference" href="#id5" id="id3">[2]</a> (Erfordlich)<a class="headerlink" href="#kopf-trimmen-head-crop-2-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Anzahl der Nukleotide, die ab dem Beginn des Reads geschnitten werden sollen, einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Default: 50.</li>
-<li>If you do not want to crop any reads, set the value to 0.</li>
+<li>Standardwert: 50.</li>
 </ul>
 </div>
 <table class="docutils footnote" frame="void" id="id4" rules="none">

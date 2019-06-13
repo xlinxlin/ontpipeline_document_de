@@ -10,33 +10,29 @@ ____________________________________
 Die Optionen für Porechop einzustellen.
 
 .. note::
-  * Select "I want to trim adapter" if you want to use Porechop to trim adapters. Defaut: selected.
-  * Select "I want to skip splitting reads based on middle adapters" if you do not want to splt reads when an adapter is found in the middle. Default: not selected. 
+  * "I want to trim adapter" auszuwählen, wenn Sie Porechop verwenden möchten, um die Adapter der Sequenzen zu trimmen. Standardwert: ausgewählt.
+  * "I want to skip splitting reads based on middle adapters" auszuwählen, wenn Sie keine Sequenz, die sich in der Mitte einen Adapter befindet, teilen möchten. Standardwert: nicht ausgewählt.
 
-Read Score [2]_ (Required)
-_____________________________
-Set a minimum average read quality score to filter the reads.
-
-.. note::
-  * Default: 9.
-  * If you want to keep all the reads, set the value to 0 .
-
-Read Length [2] (Required)
-______________________________
-Set a minimum read length to filter reads.
+Read Score(Read Score) [2]_ (Erfordlich)
+________________________________________
+Einer durchschnittlichen Mindestwert für die Readqualität einzugeben, um die Reads zu filtern.
 
 .. note::
-  * Default: 500.
-  * If you want to keep all the reads, set the value to 0, or only a postive integer is acceptable.
+  * Standardwert: 9. 
 
-Head Crop [2]_ (Required)
-____________________________
-Set n nucleotides to be trimmed from start of read.
+Readlänge(Read Length) [2] (Erfordlich)
+_______________________________________
+Eine minimale Readlänge einzugeben, um  die Reads zu filtern.
 
 .. note::
-  * Default: 50.
-  * If you do not want to crop any reads, set the value to 0. 
- 
+  * Standardwert: 500.
+
+Kopf trimmen(Head Crop) [2]_ (Erfordlich)
+_________________________________________
+Anzahl der Nukleotide, die ab dem Beginn des Reads geschnitten werden sollen, einzugeben.
+
+.. note::
+  * Standardwert: 50. 
  
 .. [1] Porechop https://github.com/rrwick/Porechop
 .. [2] NanoFilt https://github.com/wdecoster/nanofilt
