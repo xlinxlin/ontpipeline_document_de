@@ -1,87 +1,87 @@
-Output File Structure
-=====================
+Die Struktur der Ausgabedaten
+=============================
 
 ::
 
     Output_Directory/
-     ├── Analysis_{timestamp}/
+     ├── Analysis_{Zeitstempel}/
      |    ├── Basecalled/
      |    ├── Barcodes/
      |    |    ├── barcode01/
      |    |    ├── barcode02/
      |    |    ├── barcode03/
      |    |    ├── unclassified/
-     |    |    ├── Prefix01.fastq
-     |    |    ├── Prefix02.fastq
-     |    |    └── Prefix03.fastq
+     |    |    ├── Präfix01.fastq
+     |    |    ├── Präfix02.fastq
+     |    |    └── Präfix03.fastq
      |    ├── AdaperTrimmedFiles/
-     |    |    ├── Prefix01_trimmed.fastq
-     |    |    ├── Prefix02_trimmed.fastq
-     |    |    └── Prefix03_trimmed.fastq
+     |    |    ├── Präfix01_trimmed.fastq
+     |    |    ├── Präfix02_trimmed.fastq
+     |    |    └── Präfix03_trimmed.fastq
      |    ├── FiltedFiles/
-     |    |    ├── Prefix01_filted.fastq
-     |    |    ├── Prefix02_filted.fastq
-     |    |    └── Prefix03_filted.fastq
+     |    |    ├── Präfix01_filted.fastq
+     |    |    ├── Präfix02_filted.fastq
+     |    |    └── Präfix03_filted.fastq
      |    ├── StatFiles/
-     |    |    ├── Prefix01_trimmed_stat.txt
-     |    |    ├── Prefix02_trimmed_stat.txt
-     |    |    ├── Prefix03_trimmed_stat.txt
-     |    |    ├── Prefix01_filted_stat.txt
-     |    |    ├── Prefix02_filted_stat.txt
-     |    |    └── Prefix03_filted_stat.txt
-     |    ├── Prefix01_Assembly/
+     |    |    ├── Präfix01_trimmed_stat.txt
+     |    |    ├── Präfix02_trimmed_stat.txt
+     |    |    ├── Präfix03_trimmed_stat.txt
+     |    |    ├── Präfix01_filted_stat.txt
+     |    |    ├── Präfix02_filted_stat.txt
+     |    |    └── Präfix03_filted_stat.txt
+     |    ├── Präfix01_Assembly/
      |    |    ├── ...
      |    |    └── assembly.fasta
-     |    ├── Prefix02_Assembly/
+     |    ├── Präfix02_Assembly/
      |    |    ├── ...
      |    |    └── assembly.fasta
-     |    ├── Prefix03_Assembly/
+     |    ├── Präfix03_Assembly/
      |    |    ├── ...
      |    |    └── assembly.fasta
-     |    ├── Prefix01_Polishing/
-     |    |    ├── run_Prefix01_busco/
+     |    ├── Präfix01_Polishing/
+     |    |    ├── run_Präfix01_busco/
      |    |    |    ├── ...
-     |    |    |    └── full_table_Prefix01_busco.tsv
+     |    |    |    └── full_table_Präfix01_busco.tsv
      |    |    ├── ...   
      |    |    └── pilon_1.fasta
-     |    ├── Prefix02_Polishing/
-     |    |    ├── run_Prefix02_busco/
+     |    ├── Präfix02_Polishing/
+     |    |    ├── run_Präfix02_busco/
      |    |    |    ├── ...
-     |    |    |    └── full_table_Prefix02_busco.tsv
+     |    |    |    └── full_table_Präfix02_busco.tsv
      |    |    ├── ...   
      |    |    └── pilon_1.fasta
-     |    ├── Prefix03_Polishing/
-     |    |    ├── run_Prefix03_busco/
+     |    ├── Präfix03_Polishing/
+     |    |    ├── run_Präfix03_busco/
      |    |    |    ├── ...
-     |    |    |    └── full_table_Prefix03_busco.tsv
+     |    |    |    └── full_table_Präfix03_busco.tsv
      |    |    ├── ...   
      |    |    └── pilon_1.fasta
      |    └── Logs/
      |         ├── guppy_basecaller.log
      |         ├── guppy_barcoder.log
-     |         ├── Prefix01_trimmed.log
-     |         ├── Prefix02_trimmed.log
-     |         ├── Prefix03_trimmed.log
-     |         ├── Prefix01_filted.log
-     |         ├── Prefix02_filted.log
-     |         ├── Prefix03_filted.log
-     |         ├── Prefix01_assembly.log
-     |         ├── Prefix02_assembly.log
-     |         ├── Prefix03_assembly.log
-     |         ├── Prefix01_polishing_1.log
-     |         ├── Prefix02_polishing_1.log
-     |         ├── Prefix03_polishing_1.log
-     |         ├── Prefix01_busco.log
-     |         ├── Prefix02_busco.log
-     |         └── Prefix03_busco.log
-     ├── pipelineWithLoop_{timestamp}.pbs # Submitted PBS file.
-     └── userlog_{timestamp}.log # User given parameters.
+     |         ├── Präfix01_trimmed.log
+     |         ├── Präfix02_trimmed.log
+     |         ├── Präfix03_trimmed.log
+     |         ├── Präfix01_filted.log
+     |         ├── Präfix02_filted.log
+     |         ├── Präfix03_filted.log
+     |         ├── Präfix01_assembly.log
+     |         ├── Präfix02_assembly.log
+     |         ├── Präfix03_assembly.log
+     |         ├── Präfix01_polishing_1.log
+     |         ├── Präfix02_polishing_1.log
+     |         ├── Präfix03_polishing_1.log
+     |         ├── Präfix01_busco.log
+     |         ├── Präfix02_busco.log
+     |         └── Präfix03_busco.log
+     ├── pipelineWithLoop_{Zeitstempel}.pbs # Übermittelte PBS-Datei.
+     └── userlog_{Zeitstempel}.log # Vom Benutzer angegebene Parameter.
      
     /home/{$USER}/
-     ├── Ont_Pipeline.e* # Error messages after the run. 
-     └── Ont_Pipeline.o* # Output messages after the run.
+     ├── Ont_Pipeline.e* # Fehlermeldungen in dem Lauf. 
+     └── Ont_Pipeline.o* # Nachrichten in dem Lauf.
      
     /opt/ontpipeline/logs/
      ├── ...
-     └── {$USER}_error.log # Error messages if something wrong with the program.
+     └── {$USER}_error.log # Fehlermeldungen für das Java-Programm.
    

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General Settings &mdash; ontpipeline_document_de  Dokumentation</title>
+  <title>Allgemein Einstelllung &mdash; ontpipeline_document_de  Dokumentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Base Calling Settings" href="BasecallingSettings.html" />
+    <link rel="next" title="Base Calling Einstellung" href="BasecallingSettings.html" />
     <link rel="prev" title="Output File Structure" href="OutputFileStructure.html" /> 
 
   
@@ -82,20 +82,20 @@
 <li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="InputFileStructure.html">Input File Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Output File Structure</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">General Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ont-dir-required">ONT Dir. (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#illumina-dir-optional-required">Illumina Dir. (Optional/Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#output-dir-required">Output Dir. (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sample-sheet-optional">Sample sheet (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#prefix-optional">Prefix (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#threads-required">Threads (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#barcodes-optional">Barcodes (Optional)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Allgemein Einstelllung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ont-verzeichnis-ont-dir-erfordlich">ONT Verzeichnis(ONT Dir.) (Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ont-verzeichnis-illumina-dir-optional-erfordlich">ONT Verzeichnis(Illumina Dir.) (Optional/Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ausgabeverzeichnis-output-dir-erfordlich">Ausgabeverzeichnis(Output Dir.) (Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#musterblatt-sample-sheet-optional">Musterblatt(Sample sheet) (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prafix-prefix-optional">Präfix(Prefix) (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#theads-threads-erfordlich">(Theads)Threads (Erfordlich)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#barcodes-barcodes-optional">(Barcodes)Barcodes (Optional)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Einstellung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PolishingSettings.html">Polishing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="QandA.html">FAQ</a></li>
 </ul>
@@ -143,7 +143,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>General Settings</li>
+      <li>Allgemein Einstelllung</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,85 +162,85 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="general-settings">
-<h1>General Settings<a class="headerlink" href="#general-settings" title="Link zu dieser Überschrift">¶</a></h1>
-<img alt="img/GeneralSettings.png" src="img/GeneralSettings.png" />
-<div class="section" id="ont-dir-required">
-<h2>ONT Dir. (Required)<a class="headerlink" href="#ont-dir-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the path to the Nanopore reads directory.</p>
+  <div class="section" id="allgemein-einstelllung">
+<h1>Allgemein Einstelllung<a class="headerlink" href="#allgemein-einstelllung" title="Link zu dieser Überschrift">¶</a></h1>
+<img alt="_images/GeneralSettings.png" src="_images/GeneralSettings.png" />
+<div class="section" id="ont-verzeichnis-ont-dir-erfordlich">
+<h2>ONT Verzeichnis(ONT Dir.) (Erfordlich)<a class="headerlink" href="#ont-verzeichnis-ont-dir-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Verzeichnispfad zu den Nanopore-Reads einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li><strong>Example:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/ONT/reads/directory</span></code></li>
+<li><strong>Beispiel:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/ONT/reads/directory</span></code></li>
 </ul>
 </div>
 </div>
-<div class="section" id="illumina-dir-optional-required">
-<h2>Illumina Dir. (Optional/Required)<a class="headerlink" href="#illumina-dir-optional-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the path to the Illumina reads directory.</p>
+<div class="section" id="ont-verzeichnis-illumina-dir-optional-erfordlich">
+<h2>ONT Verzeichnis(Illumina Dir.) (Optional/Erfordlich)<a class="headerlink" href="#ont-verzeichnis-illumina-dir-optional-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Verzeichnispfad zu den Illumina-Reads einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li><strong>Example:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/Illumina/reads/directory</span></code></li>
-<li>Required if „hybrid-assembly“ or/and „polishing“ is/are used.</li>
+<li><strong>Beispiel:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/Illumina/reads/directory</span></code></li>
+<li>Erfordlich wenn „hybrid-assembly“ oder/und „polishing“ ausgewählt wird/werden.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="output-dir-required">
-<h2>Output Dir. (Required)<a class="headerlink" href="#output-dir-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the path to the output directory.</p>
+<div class="section" id="ausgabeverzeichnis-output-dir-erfordlich">
+<h2>Ausgabeverzeichnis(Output Dir.) (Erfordlich)<a class="headerlink" href="#ausgabeverzeichnis-output-dir-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Verzeichnispfad zu den Ausgaben einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li><strong>Example:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/output/directory</span></code></li>
+<li><strong>Beispiel:</strong> <code class="file docutils literal notranslate"><span class="pre">/path/to/your/output/directory</span></code></li>
 </ul>
 </div>
 </div>
-<div class="section" id="sample-sheet-optional">
-<h2>Sample sheet (Optional)<a class="headerlink" href="#sample-sheet-optional" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the path to the sample sheet file.</p>
+<div class="section" id="musterblatt-sample-sheet-optional">
+<h2>Musterblatt(Sample sheet) (Optional)<a class="headerlink" href="#musterblatt-sample-sheet-optional" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Pfadname zum Musterblatt einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>The sample sheet file type must be CSV or TSV.</li>
+<li>Das Dateiformat des Musterblattes muss CSV oder TSV sein.</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warnung</p>
 <ul class="last simple">
-<li>Underscore(‚_‘) is <strong>not</strong> allowed in the sample name.</li>
+<li>Unterstrich(‚_‘) ist im Probenname <strong>nicht</strong> erlaubt.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="prefix-optional">
-<h2>Prefix (Optional)<a class="headerlink" href="#prefix-optional" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the prefix for the Nanopore reads after demultiplexing.</p>
+<div class="section" id="prafix-prefix-optional">
+<h2>Präfix(Prefix) (Optional)<a class="headerlink" href="#prafix-prefix-optional" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Ein Präfix für die Umbenennung der Nanopore-Reads nach „demultiplexing“ einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li><strong>Example:</strong> ID .</li>
-<li>Default: barcode .</li>
+<li><strong>Bespiel:</strong> ID .</li>
+<li>Standardwert: barcode .</li>
 </ul>
 </div>
 </div>
-<div class="section" id="threads-required">
-<h2>Threads (Required)<a class="headerlink" href="#threads-required" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set the number of threads/cpus to run the analysis.</p>
+<div class="section" id="theads-threads-erfordlich">
+<h2>(Theads)Threads (Erfordlich)<a class="headerlink" href="#theads-threads-erfordlich" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Die benötige Anzahl der Threads/CPUs für den Pipeline-Lauf einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Default: 8.</li>
+<li>Standardwert: 8.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="barcodes-optional">
-<h2>Barcodes (Optional)<a class="headerlink" href="#barcodes-optional" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Set which barcodes will be analyzed. Put in the numbers and separate them with a comma.</p>
+<div class="section" id="barcodes-barcodes-optional">
+<h2>(Barcodes)Barcodes (Optional)<a class="headerlink" href="#barcodes-barcodes-optional" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Welche Barcodes, die zum Pipeline-Lauf gebracht werden, einzugeben. Einfach die Barcode-Nummern, die mit dem Komma getrennt werden, einzugeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li><strong>Example:</strong> 1,2,3,4</li>
-<li>If you want to analysis all barcodes, leave it blank.</li>
+<li><strong>Beispiel:</strong> 1,2,3,4</li>
+<li>Falls alle Barcodes zum Pipeline-Lauf gebracht werden, einfach dieses Feld leer lassen.</li>
 </ul>
 </div>
 </div>
@@ -254,7 +254,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="BasecallingSettings.html" class="btn btn-neutral float-right" title="Base Calling Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="BasecallingSettings.html" class="btn btn-neutral float-right" title="Base Calling Einstellung" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="OutputFileStructure.html" class="btn btn-neutral" title="Output File Structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -1,21 +1,21 @@
-Polishing Settings
-==================
+Polishing Einstellung
+=====================
 
 .. image:: /img/PolishingSettings.png
 
 .. image:: /img/AdvancedPolishingSettings.png
 
-Polishing times (Required)
-__________________________
-Set polishing times.
+Polishing Frequenz(Polishing times) (Erfordlich)
+________________________________________________
+Die Anzahl der Frequenz für Polishing einzugeben.
 
 .. note::
-  * Default: 1.
+  * Standardwert: 1.
   
-BUSCO settings (Optional)
-_________________________
-Set BUSCO options.
+BUSCO Einstellung (Optional)
+____________________________
+Die Optionen für BUSCO einzustellen.
 
 .. note::
-  * Select "I want to use BUSCO for the assessement of genome assembly" if you want to use BUSCO. Default: not selected.
-  * Select a lineage dataset. Default: Bacteria.
+  * "I want to use BUSCO for the assessement of genome assembly" auszuwählen wenn Sie BUSCO verwenden möchten. Standardwert: nicht ausgewählt.
+  * Einer Abstammungsdatensatz auszuwählen. Standardwert: Bacteria .

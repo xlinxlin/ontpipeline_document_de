@@ -1,13 +1,13 @@
-Reads Filter Settings
-=====================
+Reads Filter Einstellung
+========================
 
 .. image:: /img/ReadsFilterSettings.png
 
 .. image:: /img/AdvancedReadsFilterSettings.png
 
-Porechop Settings [1]_ (Optional)
-_________________________________
-Set Porechop options.
+Porechop Einstellung [1]_ (Optional)
+____________________________________
+Die Optionen für Porechop einzustellen.
 
 .. note::
   * Select "I want to trim adapter" if you want to use Porechop to trim adapters. Defaut: selected.

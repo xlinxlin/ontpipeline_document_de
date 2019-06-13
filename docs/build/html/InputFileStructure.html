@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Input File Structure &mdash; ontpipeline_document_de  Dokumentation</title>
+  <title>Die Struktur der Eingabedaten &mdash; ontpipeline_document_de  Dokumentation</title>
   
 
   
@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
-    <link rel="search" title="Suche" href="search.html" /> 
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Die Struktur der Ausgabedaten" href="OutputFileStructure.html" />
+    <link rel="prev" title="Get Started" href="GetStarted.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -76,19 +78,27 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Input File Structure</a><ul>
-<li><a class="reference internal" href="#start-from-base-calling">Start from Base Calling</a></li>
-<li><a class="reference internal" href="#start-from-demultiplexing">Start from Demultiplexing</a></li>
-<li><a class="reference internal" href="#start-from-reads-filter">Start from Reads Filter</a></li>
-<li><a class="reference internal" href="#start-from-assembly">Start from Assembly</a></li>
-<li><a class="reference internal" href="#start-from-polishing">Start from Polishing</a></li>
-<li><a class="reference internal" href="#sample-sheet">Sample Sheet</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Die Struktur der Eingabedaten</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#start-von-base-calling">Start von Base Calling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-von-demultiplexing">Start von Demultiplexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-von-reads-filter">Start von Reads Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-von-assembly">Start von Assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-von-polishing">Start von Polishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#musterblatt-sample-sheet">Musterblatt(Sample Sheet)</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Die Struktur der Ausgabedaten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">Allgemein Einstelllung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DemultiplexingSettings.html">Demultiplexing Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PolishingSettings.html">Polishing Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QandA.html">FAQ</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -132,7 +142,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Input File Structure</li>
+      <li>Die Struktur der Eingabedaten</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -151,11 +161,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="input-file-structure">
-<h1>Input File Structure<a class="headerlink" href="#input-file-structure" title="Link zu dieser Überschrift">¶</a></h1>
-<div class="section" id="start-from-base-calling">
-<h2>Start from Base Calling<a class="headerlink" href="#start-from-base-calling" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Start the pipeline from Base calling.</p>
+  <div class="section" id="die-struktur-der-eingabedaten">
+<h1>Die Struktur der Eingabedaten<a class="headerlink" href="#die-struktur-der-eingabedaten" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="start-von-base-calling">
+<h2>Start von Base Calling<a class="headerlink" href="#start-von-base-calling" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Start die Pipeline von Base Calling.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ONT_Reads_Directory/
 ├── HPz800_20180821_FAJ18422_MN17776_sequencing_run_VIM4_Janina_26844_read_11_ch_171_strand.fast5
 ├── HPz800_20180821_FAJ18422_MN17776_sequencing_run_VIM4_Janina_26844_read_11_ch_203_strand.fast5
@@ -165,33 +175,33 @@
 └── ......
 
 Illumina_Reads_Directory/
-├── Prefix01_HQ_1.fastq.gz
-├── Prefix01_HQ_2.fastq.gz
-├── Prefix02_HQ_1.fastq.gz
-├── Prefix02_HQ_2.fastq.gz
-├── Prefix03_HQ_1.fastq.gz
-├── Prefix03_HQ_2.fastq.gz
+├── Präfix01_HQ_1.fastq.gz
+├── Präfix01_HQ_2.fastq.gz
+├── Präfix02_HQ_1.fastq.gz
+├── Präfix02_HQ_2.fastq.gz
+├── Präfix03_HQ_1.fastq.gz
+├── Präfix03_HQ_2.fastq.gz
 └── ......
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Illumina reads files naming structure for each pair: Prefix_HQ_1.fastq.gz  Prefix_HQ_2.fastq.gz</li>
-<li>„Prefix“ is the sample name, each pair should has its own prefix.</li>
-<li>„*“ means arbitrarily long characters.</li>
+<li>Die Benennungsregeln für jedes Illumina-Reads Paar: Präfix_HQ_1.fastq.gz  Präfix_HQ_2.fastq.gz</li>
+<li>„Präfix“ ist der Probenname und das ist identisch für jedes Paar.</li>
+<li>„*“ bedeuted beliebig lange Zeichen.</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warnung</p>
 <ul class="last simple">
-<li>Do not use underscore („_“) in the prefix.</li>
+<li>Unterstrich(‚_‘) ist im Präfix nicht erlaubt.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="start-from-demultiplexing">
-<h2>Start from Demultiplexing<a class="headerlink" href="#start-from-demultiplexing" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Start the pipeline from Demultiplexing.</p>
+<div class="section" id="start-von-demultiplexing">
+<h2>Start von Demultiplexing<a class="headerlink" href="#start-von-demultiplexing" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Start die Pipeline von Demultiplexing.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ONT_Reads_Directory/
 ├── fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq
 ├── fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_1.fastq
@@ -201,109 +211,109 @@ Illumina_Reads_Directory/
 └── ......
 
 Illumina_Reads_Directory/
-├── Prefix01_HQ_1.fastq.gz
-├── Prefix01_HQ_2.fastq.gz
-├── Prefix02_HQ_1.fastq.gz
-├── Prefix02_HQ_2.fastq.gz
-├── Prefix03_HQ_1.fastq.gz
-├── Prefix03_HQ_2.fastq.gz
+├── Präfix01_HQ_1.fastq.gz
+├── Präfix01_HQ_2.fastq.gz
+├── Präfix02_HQ_1.fastq.gz
+├── Präfix02_HQ_2.fastq.gz
+├── Präfix03_HQ_1.fastq.gz
+├── Präfix03_HQ_2.fastq.gz
 └── ......
 </pre></div>
 </div>
 </div>
-<div class="section" id="start-from-reads-filter">
-<h2>Start from Reads Filter<a class="headerlink" href="#start-from-reads-filter" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Start the pipeline from Reads Filter.</p>
+<div class="section" id="start-von-reads-filter">
+<h2>Start von Reads Filter<a class="headerlink" href="#start-von-reads-filter" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Start die Pipeline von Reads Filter.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ONT_Reads_Directory/
-├── Prefix01.fastq
-├── Prefix02.fastq
-├── Prefix03.fastq
-├── Prefix04.fastq
-├── Prefix05.fastq
+├── Präfix01.fastq
+├── Präfix02.fastq
+├── Präfix03.fastq
+├── Präfix04.fastq
+├── Präfix05.fastq
 └── ......
 
 Illumina_Reads_Directory/
-├── Prefix01_HQ_1.fastq.gz
-├── Prefix01_HQ_2.fastq.gz
-├── Prefix02_HQ_1.fastq.gz
-├── Prefix02_HQ_2.fastq.gz
-├── Prefix03_HQ_1.fastq.gz
-├── Prefix03_HQ_2.fastq.gz
+├── Präfix01_HQ_1.fastq.gz
+├── Präfix01_HQ_2.fastq.gz
+├── Präfix02_HQ_1.fastq.gz
+├── Präfix02_HQ_2.fastq.gz
+├── Präfix03_HQ_1.fastq.gz
+├── Präfix03_HQ_2.fastq.gz
 └── ......
 </pre></div>
 </div>
 </div>
-<div class="section" id="start-from-assembly">
-<h2>Start from Assembly<a class="headerlink" href="#start-from-assembly" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Start the pipeline from Assembly.</p>
+<div class="section" id="start-von-assembly">
+<h2>Start von Assembly<a class="headerlink" href="#start-von-assembly" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Start die Pipeline von Assembly.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ONT_Reads_Directory/
-├── Prefix01.fastq
-├── Prefix02.fastq
-├── Prefix03.fastq
-├── Prefix04.fastq
-├── Prefix05.fastq
+├── Präfix01.fastq
+├── Präfix02.fastq
+├── Präfix03.fastq
+├── Präfix04.fastq
+├── Präfix05.fastq
 └── ......
 
 Illumina_Reads_Directory/
-├── Prefix01_HQ_1.fastq.gz
-├── Prefix01_HQ_2.fastq.gz
-├── Prefix02_HQ_1.fastq.gz
-├── Prefix02_HQ_2.fastq.gz
-├── Prefix03_HQ_1.fastq.gz
-├── Prefix03_HQ_2.fastq.gz
+├── Präfix01_HQ_1.fastq.gz
+├── Präfix01_HQ_2.fastq.gz
+├── Präfix02_HQ_1.fastq.gz
+├── Präfix02_HQ_2.fastq.gz
+├── Präfix03_HQ_1.fastq.gz
+├── Präfix03_HQ_2.fastq.gz
 └── ......
 </pre></div>
 </div>
 </div>
-<div class="section" id="start-from-polishing">
-<h2>Start from Polishing<a class="headerlink" href="#start-from-polishing" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Start the pipeline from Polishing.</p>
+<div class="section" id="start-von-polishing">
+<h2>Start von Polishing<a class="headerlink" href="#start-von-polishing" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Start die Pipeline von Polishing.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ONT_Reads_Directory/
-├── Prefix01.fasta
-├── Prefix02.fasta
-├── Prefix03.fasta
-├── Prefix04.fasta
-├── Prefix05.fasta
+├── Präfix01.fasta
+├── Präfix02.fasta
+├── Präfix03.fasta
+├── Präfix04.fasta
+├── Präfix05.fasta
 └── ......
 
 Illumina_Reads_Directory/
-├── Prefix01_HQ_1.fastq.gz
-├── Prefix01_HQ_2.fastq.gz
-├── Prefix02_HQ_1.fastq.gz
-├── Prefix02_HQ_2.fastq.gz
-├── Prefix03_HQ_1.fastq.gz
-├── Prefix03_HQ_2.fastq.gz
+├── Präfix01_HQ_1.fastq.gz
+├── Präfix01_HQ_2.fastq.gz
+├── Präfix02_HQ_1.fastq.gz
+├── Präfix02_HQ_2.fastq.gz
+├── Präfix03_HQ_1.fastq.gz
+├── Präfix03_HQ_2.fastq.gz
 └── ......
 </pre></div>
 </div>
 </div>
-<div class="section" id="sample-sheet">
-<h2>Sample Sheet<a class="headerlink" href="#sample-sheet" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="musterblatt-sample-sheet">
+<h2>Musterblatt(Sample Sheet)<a class="headerlink" href="#musterblatt-sample-sheet" title="Link zu dieser Überschrift">¶</a></h2>
 <table border="1" class="colwidths-given docutils" id="id1">
-<caption><span class="caption-text">Sample Sheet</span><a class="headerlink" href="#id1" title="Link zu dieser Tabelle">¶</a></caption>
+<caption><span class="caption-text">Musterblatt</span><a class="headerlink" href="#id1" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Sample</th>
+<tr class="row-odd"><th class="head">Probenname</th>
 <th class="head">Barcode</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>example_1</td>
+<tr class="row-even"><td>Probenname1</td>
 <td>barcode01</td>
 </tr>
-<tr class="row-odd"><td>example_2</td>
+<tr class="row-odd"><td>Probenname2</td>
 <td>barcode02</td>
 </tr>
-<tr class="row-even"><td>example_3</td>
+<tr class="row-even"><td>Probenname3</td>
 <td>barcode03</td>
 </tr>
-<tr class="row-odd"><td>example_4</td>
+<tr class="row-odd"><td>Probenname4</td>
 <td>barcode04</td>
 </tr>
-<tr class="row-even"><td>example_5</td>
+<tr class="row-even"><td>Probenname5</td>
 <td>barcode05</td>
 </tr>
 </tbody>
@@ -311,8 +321,8 @@ Illumina_Reads_Directory/
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>The type of sample sheet file is CSV (split cell contents by comma) or TSV (split cell contents by tab).</li>
-<li>The format of barcode name: barcodeXX („barcode“ can be any characters, but XX must be two digits: 01,02,03,…,10,11,12,…)</li>
+<li>Das Dateiformat des Musterblattes ist entweder CSV (Trennzeichen ist das Komma) oder TSV (Trennzeichen ist die Tabulatortaste).</li>
+<li>Die Benennungsregeln für Barcode: barcodeXX („barcode“ kann beliebig Zeichen sein, aber „XX“ muss zweistellig sein,z.B. 01,02,03,…,10,11,12,…)</li>
 </ul>
 </div>
 </div>
@@ -323,6 +333,15 @@ Illumina_Reads_Directory/
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="OutputFileStructure.html" class="btn btn-neutral float-right" title="Die Struktur der Ausgabedaten" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GetStarted.html" class="btn btn-neutral" title="Get Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

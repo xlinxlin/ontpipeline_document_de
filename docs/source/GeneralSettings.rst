@@ -1,59 +1,59 @@
-General Settings
-================
+Allgemein Einstelllung
+======================
 
 .. image:: /img/GeneralSettings.png
 
-ONT Dir. (Required)
-___________________
-Set the path to the Nanopore reads directory. 
+ONT Verzeichnis(ONT Dir.) (Erfordlich)
+______________________________________
+Der Verzeichnispfad zu den Nanopore-Reads einzugeben.
 
 .. note::
-  * **Example:** :file:`/path/to/your/ONT/reads/directory`
+  * **Beispiel:** :file:`/path/to/your/ONT/reads/directory`
   
-Illumina Dir. (Optional/Required)
-_________________________________
-Set the path to the Illumina reads directory. 
+ONT Verzeichnis(Illumina Dir.) (Optional/Erfordlich)
+____________________________________________________
+Der Verzeichnispfad zu den Illumina-Reads einzugeben.
 
 .. note::
-  * **Example:** :file:`/path/to/your/Illumina/reads/directory`
-  * Required if "hybrid-assembly" or/and "polishing" is/are used.
+  * **Beispiel:** :file:`/path/to/your/Illumina/reads/directory`
+  * Erfordlich wenn "hybrid-assembly" oder/und "polishing" ausgewählt wird/werden.
 
-Output Dir. (Required)
-______________________
-Set the path to the output directory. 
-
-.. note::
-  * **Example:** :file:`/path/to/your/output/directory`
-
-Sample sheet (Optional)
-_______________________
-Set the path to the sample sheet file. 
+Ausgabeverzeichnis(Output Dir.) (Erfordlich)
+____________________________________________
+Der Verzeichnispfad zu den Ausgaben einzugeben.
 
 .. note::
-  * The sample sheet file type must be CSV or TSV.
+  * **Beispiel:** :file:`/path/to/your/output/directory`
+
+Musterblatt(Sample sheet) (Optional)
+____________________________________
+Der Pfadname zum Musterblatt einzugeben.
+
+.. note::
+  * Das Dateiformat des Musterblattes muss CSV oder TSV sein.
 
 .. warning::
-  * Underscore('_') is **not** allowed in the sample name.
+  * Unterstrich('_') ist im Probenname **nicht** erlaubt.
   
-Prefix (Optional)
-_________________
-Set the prefix for the Nanopore reads after demultiplexing. 
+Präfix(Prefix) (Optional)
+_________________________
+Ein Präfix für die Umbenennung der Nanopore-Reads nach "demultiplexing" einzugeben.
 
 .. note::
-  * **Example:** ID .
-  * Default: barcode .
+  * **Bespiel:** ID .
+  * Standardwert: barcode .
 
-Threads (Required)
-_____________________
-Set the number of threads/cpus to run the analysis.
-
-.. note::
-  * Default: 8.
-
-Barcodes (Optional)
-______________________
-Set which barcodes will be analyzed. Put in the numbers and separate them with a comma.
+(Theads)Threads (Erfordlich)
+____________________________
+Die benötige Anzahl der Threads/CPUs für den Pipeline-Lauf einzugeben.
 
 .. note::
-  * **Example:** 1,2,3,4
-  * If you want to analysis all barcodes, leave it blank.
+  * Standardwert: 8.
+
+(Barcodes)Barcodes (Optional)
+_____________________________
+Welche Barcodes, die zum Pipeline-Lauf gebracht werden, einzugeben. Einfach die Barcode-Nummern, die mit dem Komma getrennt werden, einzugeben. 
+
+.. note::
+  * **Beispiel:** 1,2,3,4
+  * Falls alle Barcodes zum Pipeline-Lauf gebracht werden, einfach dieses Feld leer lassen.

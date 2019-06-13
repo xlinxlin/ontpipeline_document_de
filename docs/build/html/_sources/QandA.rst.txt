@@ -1,7 +1,7 @@
 FAQ
 ===
-What bioinformatics tools are used?
-___________________________________
+Welche Bioinformatik-Tools werden verwendet?
+____________________________________________
 * Guppy  https://community.nanoporetech.com
 * Porechop  https://github.com/rrwick/Porechop
 * NanoStat  https://github.com/wdecoster/nanostat

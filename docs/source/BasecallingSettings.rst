@@ -1,53 +1,48 @@
-Base Calling Settings
-=====================
+Base Calling Einstellung
+========================
 
 .. image:: /img/BasecallingSettings.png
 
-Flowcell ID [2]_ (Required)
-______________________________
-Choose the Flowcell ID from the select list.
+(Flowcell ID)Flowcell ID [2]_ (Erfordlich)
+__________________________________________
+Eine Flowcell-ID aus der Liste auszuwählen.
 
-Kit Number [2]_ (Required)
-_____________________________
-Choose the kit number from the select list.
+(Kit Nummer)Kit Number [2]_ (Erfordlich)
+________________________________________
+Eine Kit-Nummer aus der Liste auszuwählen.
 
 .. image:: /img/AdvancedBasecallingSettings.png
 
-Mode (Required)
-________________
-Set the Guppy base calling mode.
+(Modus)Mode (Erfordlich)
+________________________
+Guppy "Base Calling" Modus einzustellen.
 
 .. note::
-  * Default: high-accuracy.
+  * Standardwert: high-accuracy.
   
-Device (Required)
-_________________
-Set the sequencing device.
+Gerät(Device) (Erfordlich)
+__________________________
+Das Sequenzier-Geräte einzustellen.
 
 .. note::
-  * Default: PromethION.
+  * Standardwert: PromethION.
 
-cpu_threads_per_caller [1]_ (Default)
+cpu_threads_per_caller [1]_ (Standardwert)
+__________________________________________
+
+.. note::
+  * Standardwert: 1.
+
+records_per_fastq [2]_ (Standardwert)
 _____________________________________
-
 .. note::
-  * Set value: 1.
+  * Standardwert: 0.
+  * Die Dateien werden per "Worker(CPU)" und per "Run ID" erstellt.
 
-records_per_fastq [2]_ (Default)
-_________________________________
+recursive [2]_ (Standardwert)
+_____________________________
 .. note::
-  * Set value: 0.
-  * Use a single file (per worker, per run id).
-
-recursive [2]_ (Default)
-_________________________
-.. note::
-  * Set value: search for input files recursively.
-
-enable_trimming [2]_ (Default)
-_________________________________
-.. note::
-  * Set value: enable trimming of the adapter from the beginning of the read before base calling.
+  * Standardwert: die Eingabedateien werden rekursiv durchgesucht.
 
 
 .. [1] Guppy v3.0.3 Release https://community.nanoporetech.com/posts/guppy-3-0-release

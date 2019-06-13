@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Demultiplexing Settings &mdash; ontpipeline_document_de  Dokumentation</title>
+  <title>Demultiplexing Einstellung &mdash; ontpipeline_document_de  Dokumentation</title>
   
 
   
@@ -29,7 +29,7 @@
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
     <link rel="next" title="Reads Filter Settings" href="ReadsFilterSettings.html" />
-    <link rel="prev" title="Base Calling Settings" href="BasecallingSettings.html" /> 
+    <link rel="prev" title="Base Calling Einstellung" href="BasecallingSettings.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,17 +82,17 @@
 <li class="toctree-l1"><a class="reference internal" href="GetStarted.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="InputFileStructure.html">Input File Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OutputFileStructure.html">Output File Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">General Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Settings</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Demultiplexing Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#barcode-kit-1-optional">Barcode kit  (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#records-per-fastq-1-default">records_per_fastq  (Default)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recursive-1-default">recursive  (Default)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">Allgemein Einstelllung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Base Calling Einstellung</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Demultiplexing Einstellung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#barcode-kit-barcode-kit-1-optional">Barcode Kit(Barcode kit)  (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#records-per-fastq-1-standardwert">records_per_fastq  (Standardwert)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recursive-1-standardwert">recursive  (Standardwert)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#trim-barcodes-2-default">trim_barcodes  (Default)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Einstellung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PolishingSettings.html">Polishing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="QandA.html">FAQ</a></li>
 </ul>
@@ -140,7 +140,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Demultiplexing Settings</li>
+      <li>Demultiplexing Einstellung</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -159,36 +159,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="demultiplexing-settings">
-<h1>Demultiplexing Settings<a class="headerlink" href="#demultiplexing-settings" title="Link zu dieser Überschrift">¶</a></h1>
-<img alt="img/DemultiplexingSettings.png" src="img/DemultiplexingSettings.png" />
-<div class="section" id="barcode-kit-1-optional">
-<h2>Barcode kit <a class="footnote-reference" href="#id5" id="id1">[1]</a> (Optional)<a class="headerlink" href="#barcode-kit-1-optional" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Choose the barcode kit(s) from the list if used.</p>
+  <div class="section" id="demultiplexing-einstellung">
+<h1>Demultiplexing Einstellung<a class="headerlink" href="#demultiplexing-einstellung" title="Link zu dieser Überschrift">¶</a></h1>
+<img alt="_images/DemultiplexingSettings.png" src="_images/DemultiplexingSettings.png" />
+<div class="section" id="barcode-kit-barcode-kit-1-optional">
+<h2>Barcode Kit(Barcode kit) <a class="footnote-reference" href="#id5" id="id1">[1]</a> (Optional)<a class="headerlink" href="#barcode-kit-barcode-kit-1-optional" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Einer Barcode-Kit oder mehrere Barcode-Kits aus der List auszuwählen, falls der/die verwendet wird/werden.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>If no barcode kit was used, leave it blank.</li>
-<li>Multiple selections possible.</li>
+<li>Falls keiner Barcode-Kit verwendet wird, einfach dieses Feld leer lassen.</li>
+<li>Mehrfachauswahl ist möglich.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="records-per-fastq-1-default">
-<h2>records_per_fastq <a class="footnote-reference" href="#id5" id="id2">[1]</a> (Default)<a class="headerlink" href="#records-per-fastq-1-default" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="records-per-fastq-1-standardwert">
+<h2>records_per_fastq <a class="footnote-reference" href="#id5" id="id2">[1]</a> (Standardwert)<a class="headerlink" href="#records-per-fastq-1-standardwert" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Set value: 0.</li>
-<li>Use a single file (per worker, per run id).</li>
+<li>Standardwert: 0.</li>
+<li>Die Dateien werden per „Worker(CPU)“ und per „Run ID“ erstellt.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="recursive-1-default">
-<h2>recursive <a class="footnote-reference" href="#id5" id="id3">[1]</a> (Default)<a class="headerlink" href="#recursive-1-default" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="recursive-1-standardwert">
+<h2>recursive <a class="footnote-reference" href="#id5" id="id3">[1]</a> (Standardwert)<a class="headerlink" href="#recursive-1-standardwert" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Set value: search for input files recursively.</li>
+<li>Standardwert: die Eingabedateien werden rekursiv durchgesucht.</li>
 </ul>
 </div>
 </div>
@@ -197,7 +197,7 @@
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <ul class="last simple">
-<li>Trim the barcodes from the output sequences in the .fastq files.</li>
+<li>Die Barcodes aus den Ausgabesequenzen in den FASTQ-Dateien werden geschnitten.</li>
 </ul>
 </div>
 <table class="docutils footnote" frame="void" id="id5" rules="none">
@@ -226,7 +226,7 @@
         <a href="ReadsFilterSettings.html" class="btn btn-neutral float-right" title="Reads Filter Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="BasecallingSettings.html" class="btn btn-neutral" title="Base Calling Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="BasecallingSettings.html" class="btn btn-neutral" title="Base Calling Einstellung" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

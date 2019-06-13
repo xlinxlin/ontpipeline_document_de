@@ -13,22 +13,22 @@ Ein Assember-Modus auszuwählen.
   * Bold: im Grob-Modus wird das Assembly mit der höchsten Vollständigkeit und dem größten Fehler erstellt.
   * Standardwert: Normal.
 
-Method [1]_ (Required)
-______________________
-Choose an assembly method.
+Methode(Method) [1]_ (Erfordlich)
+_________________________________
+Eine Assember-Methode auszuwählen.
 
 .. note::
-  * Long-read-only assembly: Long-read-only assembly using only long reads.
-  * Hybrid assembly: Hybrid assembly using both Illumina reads and long reads. 
-  * Default: Hybrid assembly.
+  * Long-read-only assembly: mit der "Long-read-only assembly"-Methode werden nur die Nanopore-Reads zum Assembler gebracht.
+  * Hybrid assembly: mir der "Hybrid assembly"-Methode werden Illumina-Reads und die Nanopore-Reads zum Assembler gebracht.
+  * Standardwert: Hybrid assembly.
 
 .. image:: /img/AdvancedAssemblySettings.png
 
 VCF [1]_ (Optional)
 ___________________
-Produce a VCF by mapping the short reads to the final assembly if selected.
+Eine VCF Datei wird erstellt, falls diese Option ausgewählt ist.
 
 .. note::
-  * Default: not selected.
+  * Standardwert: nicht ausgewählt.
   
 .. [1] Unicycler https://github.com/rrwick/Unicycler

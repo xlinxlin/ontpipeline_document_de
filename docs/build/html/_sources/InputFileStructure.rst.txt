@@ -1,8 +1,8 @@
-Input File Structure
-====================
-Start from Base Calling
-_______________________
-Start the pipeline from Base calling.
+Die Struktur der Eingabedaten
+=============================
+Start von Base Calling
+______________________
+Start die Pipeline von Base Calling.
 
 ::
    
@@ -15,25 +15,25 @@ Start the pipeline from Base calling.
     └── ......
     
     Illumina_Reads_Directory/
-    ├── Prefix01_HQ_1.fastq.gz
-    ├── Prefix01_HQ_2.fastq.gz
-    ├── Prefix02_HQ_1.fastq.gz
-    ├── Prefix02_HQ_2.fastq.gz
-    ├── Prefix03_HQ_1.fastq.gz
-    ├── Prefix03_HQ_2.fastq.gz
+    ├── Präfix01_HQ_1.fastq.gz
+    ├── Präfix01_HQ_2.fastq.gz
+    ├── Präfix02_HQ_1.fastq.gz
+    ├── Präfix02_HQ_2.fastq.gz
+    ├── Präfix03_HQ_1.fastq.gz
+    ├── Präfix03_HQ_2.fastq.gz
     └── ......
 
 .. note::
-  * Illumina reads files naming structure for each pair: Prefix_HQ_1.fastq.gz  Prefix_HQ_2.fastq.gz
-  * "Prefix" is the sample name, each pair should has its own prefix.
-  * "*" means arbitrarily long characters.
+  * Die Benennungsregeln für jedes Illumina-Reads Paar: Präfix_HQ_1.fastq.gz  Präfix_HQ_2.fastq.gz
+  * "Präfix" ist der Probenname und das ist identisch für jedes Paar.
+  * "*" bedeuted beliebig lange Zeichen.
   
 .. warning::
-  * Do not use underscore ("_") in the prefix.
+  * Unterstrich('_') ist im Präfix nicht erlaubt.
 
-Start from Demultiplexing
-_________________________
-Start the pipeline from Demultiplexing.
+Start von Demultiplexing
+________________________
+Start die Pipeline von Demultiplexing.
 
 ::
    
@@ -46,96 +46,96 @@ Start the pipeline from Demultiplexing.
     └── ......
     
     Illumina_Reads_Directory/
-    ├── Prefix01_HQ_1.fastq.gz
-    ├── Prefix01_HQ_2.fastq.gz
-    ├── Prefix02_HQ_1.fastq.gz
-    ├── Prefix02_HQ_2.fastq.gz
-    ├── Prefix03_HQ_1.fastq.gz
-    ├── Prefix03_HQ_2.fastq.gz
+    ├── Präfix01_HQ_1.fastq.gz
+    ├── Präfix01_HQ_2.fastq.gz
+    ├── Präfix02_HQ_1.fastq.gz
+    ├── Präfix02_HQ_2.fastq.gz
+    ├── Präfix03_HQ_1.fastq.gz
+    ├── Präfix03_HQ_2.fastq.gz
     └── ......
 
 
-Start from Reads Filter
-_______________________
-Start the pipeline from Reads Filter.
+Start von Reads Filter
+______________________
+Start die Pipeline von Reads Filter.
 
 ::
 
     ONT_Reads_Directory/
-    ├── Prefix01.fastq
-    ├── Prefix02.fastq
-    ├── Prefix03.fastq 
-    ├── Prefix04.fastq
-    ├── Prefix05.fastq
+    ├── Präfix01.fastq
+    ├── Präfix02.fastq
+    ├── Präfix03.fastq 
+    ├── Präfix04.fastq
+    ├── Präfix05.fastq
     └── ......
     
     Illumina_Reads_Directory/
-    ├── Prefix01_HQ_1.fastq.gz
-    ├── Prefix01_HQ_2.fastq.gz
-    ├── Prefix02_HQ_1.fastq.gz
-    ├── Prefix02_HQ_2.fastq.gz
-    ├── Prefix03_HQ_1.fastq.gz
-    ├── Prefix03_HQ_2.fastq.gz
+    ├── Präfix01_HQ_1.fastq.gz
+    ├── Präfix01_HQ_2.fastq.gz
+    ├── Präfix02_HQ_1.fastq.gz
+    ├── Präfix02_HQ_2.fastq.gz
+    ├── Präfix03_HQ_1.fastq.gz
+    ├── Präfix03_HQ_2.fastq.gz
     └── ......
 
-Start from Assembly
+Start von Assembly
 ___________________
-Start the pipeline from Assembly.
+Start die Pipeline von Assembly.
 
 ::
    
     ONT_Reads_Directory/
-    ├── Prefix01.fastq
-    ├── Prefix02.fastq
-    ├── Prefix03.fastq 
-    ├── Prefix04.fastq
-    ├── Prefix05.fastq
+    ├── Präfix01.fastq
+    ├── Präfix02.fastq
+    ├── Präfix03.fastq 
+    ├── Präfix04.fastq
+    ├── Präfix05.fastq
     └── ......
     
     Illumina_Reads_Directory/
-    ├── Prefix01_HQ_1.fastq.gz
-    ├── Prefix01_HQ_2.fastq.gz
-    ├── Prefix02_HQ_1.fastq.gz
-    ├── Prefix02_HQ_2.fastq.gz
-    ├── Prefix03_HQ_1.fastq.gz
-    ├── Prefix03_HQ_2.fastq.gz
+    ├── Präfix01_HQ_1.fastq.gz
+    ├── Präfix01_HQ_2.fastq.gz
+    ├── Präfix02_HQ_1.fastq.gz
+    ├── Präfix02_HQ_2.fastq.gz
+    ├── Präfix03_HQ_1.fastq.gz
+    ├── Präfix03_HQ_2.fastq.gz
     └── ......
     
-Start from Polishing
-____________________
-Start the pipeline from Polishing.
+Start von Polishing
+___________________
+Start die Pipeline von Polishing.
 
 ::
    
     ONT_Reads_Directory/
-    ├── Prefix01.fasta
-    ├── Prefix02.fasta
-    ├── Prefix03.fasta 
-    ├── Prefix04.fasta
-    ├── Prefix05.fasta
+    ├── Präfix01.fasta
+    ├── Präfix02.fasta
+    ├── Präfix03.fasta 
+    ├── Präfix04.fasta
+    ├── Präfix05.fasta
     └── ......
     
     Illumina_Reads_Directory/
-    ├── Prefix01_HQ_1.fastq.gz
-    ├── Prefix01_HQ_2.fastq.gz
-    ├── Prefix02_HQ_1.fastq.gz
-    ├── Prefix02_HQ_2.fastq.gz
-    ├── Prefix03_HQ_1.fastq.gz
-    ├── Prefix03_HQ_2.fastq.gz
+    ├── Präfix01_HQ_1.fastq.gz
+    ├── Präfix01_HQ_2.fastq.gz
+    ├── Präfix02_HQ_1.fastq.gz
+    ├── Präfix02_HQ_2.fastq.gz
+    ├── Präfix03_HQ_1.fastq.gz
+    ├── Präfix03_HQ_2.fastq.gz
     └── ......
 
-Sample Sheet
-____________
-.. csv-table:: Sample Sheet
-   :header: Sample,Barcode
+Musterblatt(Sample Sheet)
+_________________________
+.. csv-table:: Musterblatt
+   :header: Probenname,Barcode
    :widths: 20, 20
 
-   example_1,barcode01
-   example_2,barcode02
-   example_3,barcode03
-   example_4,barcode04
-   example_5,barcode05
+   Probenname1,barcode01
+   Probenname2,barcode02
+   Probenname3,barcode03
+   Probenname4,barcode04
+   Probenname5,barcode05
    
 .. note::
-  * The type of sample sheet file is CSV (split cell contents by comma) or TSV (split cell contents by tab).
-  * The format of barcode name: barcodeXX ("barcode" can be any characters, but XX must be two digits: 01,02,03,...,10,11,12,...)
+  * Das Dateiformat des Musterblattes ist entweder CSV (Trennzeichen ist das Komma) oder TSV (Trennzeichen ist die Tabulatortaste).
+  * Die Benennungsregeln für Barcode: barcodeXX ("barcode" kann beliebig Zeichen sein, aber "XX" muss zweistellig sein,z.B. 01,02,03,...,10,11,12,...)
